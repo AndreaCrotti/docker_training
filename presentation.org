@@ -1,0 +1,44 @@
+#+AUTHOR: Andrea Crotti
+#+TITLE: Docker Pipeline
+#+OPTIONS: num:nil ^:nil tex:t toc:nil reveal_progress:t reveal_control:t reveal_overview:t
+#+REVEAL_TRANS: fade
+#+REVEAL_SPEED: fast
+#+EMAIL:
+#+TOC: listings
+
+* What is Docker
+
+- not a *VM*
+- isolated Linux process (using *groups* and Linux *capabilities*)
+
+* Pre containers
+  :PROPERTIES:
+  :reveal_background: ./images/cargo-transport-pre-1960.png
+  :END:
+
+* Post containers
+  :PROPERTIES:
+  :reveal_background: ./images/intermodal-shipping-container.png
+  :END:
+  
+* Code in containers
+  :PROPERTIES:
+  :reveal_background: ./images/shipping-container-for-code.png
+  :END:
+
+* Good reasons
+
+- Why Developers Care
+- Build once... (finally) run anywhere*
+- A clean, safe, hygienic, portable runtime environment for your app.
+- No worries about missing dependencies, packages and other pain points during subsequent deployments.
+- Run each app in its own isolated container, so you can run various versions of libraries and other dependencies for each app without worrying.
+- Automate testing, integration, packaging...anything you can script.
+- Reduce/eliminate concerns about compatibility on different platforms, either your own or your customers.
+- Cheap, zero-penalty containers to deploy services. A VM without the overhead of a VM. Instant replay and reset of image snapshots.
+
+* Simple live demo
+
+* Links
+ - [[http://stackoverflow.com/questions/34152365/difference-between-lxc-and-libcontainer][LXC vs libcontainer]]
+ - [[http://www.zdnet.com/article/docker-libcontainer-unifies-linux-container-powers/][libcontainer unifies Linux container powers]]
